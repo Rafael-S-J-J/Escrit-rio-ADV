@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+header {
+    width: 100%;
+    padding: 15px 0px;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.topo-titulo{
+    background-color: bisque;
+    text-decoration: none;
+     margin: 0px 10px;
+     font-size: 20px;
+     font-weight: 400;
+}
+
+.topo-menu a {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav a{
+     text-decoration: none;
+}
+
+.whatsapp-btn {
+    border-radius: 25px 60px;
+    padding: 7px;
+    background-color: rgb(43, 255, 1);
+}
+
+
