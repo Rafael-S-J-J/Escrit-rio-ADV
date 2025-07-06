@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,29 +7,45 @@
 
 header {
     width: 100%;
-    padding: 15px 0px;
     background-color: aqua;
+    margin-top: 10px;
+
 
     display: flex;
     justify-content: space-around;
 }
 
-.topo-titulo{
-    background-color: bisque;
-    text-decoration: none;
-     margin: 0px 10px;
-     font-size: 20px;
-     font-weight: 400;
+
+.card-titulo{
+    display: flex;
 }
 
-.topo-menu a {
-    margin-left: 20px;
+
+.texto-titulo a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
     font-size: 20px;
     font-weight: 400;
 }
 
-nav a{
-     text-decoration: none;
+.imagem-titulo img {
+    width: 109px;
+    height: 89px;
+}
+
+.topo-menu{
+    margin-top: 20px;
+}
+
+.topo-menu a {
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 .whatsapp-btn {
@@ -37,5 +53,3 @@ nav a{
     padding: 7px;
     background-color: rgb(43, 255, 1);
 }
-
-
