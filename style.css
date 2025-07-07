@@ -8,23 +8,22 @@
 header {
     width: 100%;
     background-color: aqua;
-    margin-top: 10px;
-
-
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+
 }
 
 
-.card-titulo{
+.card-titulo {
     display: flex;
 }
 
-
-.texto-titulo a{
+.texto-titulo a {
     text-decoration: none;
     margin: 0px 10px;
-    padding: 10px;
     font-size: 20px;
     font-weight: 400;
 }
@@ -34,22 +33,24 @@ header {
     height: 89px;
 }
 
-.topo-menu{
-    margin-top: 20px;
+
+.topo-menu {
+    display: flex;
+    margin-top: 20px;   
 }
 
 .topo-menu a {
-    margin-left: 20px;
+    padding: 15px;
+    margin: 10px;
     font-size: 23px;
     font-weight: 400;
-}
-
-nav a {
+   
     text-decoration: none;
 }
 
 .whatsapp-btn {
-    border-radius: 25px 60px;
-    padding: 7px;
+    align-items:flex-end;
+    padding: 15px;
+    border-radius: 25px 25px 10px;
     background-color: rgb(43, 255, 1);
 }
