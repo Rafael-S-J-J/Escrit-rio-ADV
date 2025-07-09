@@ -1,28 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=" description" content="Escritório Pedro Augusto">
-    <title>Pedro Agusto - Advogados</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Escritório Pedro Augusto" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pedro Augusto - Advogado</title>
 </head>
 
-
 <body>
-  <header>
+  <header id="topo">
     <div class="container">
-      <h1>Pedro Augusto - Advogados</h1>
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#atuacao">Áreas de Atuação</a>
-       <a href="https://wa.me/557199110476?text=Olá,%20gostaria%20de%20falar%20com%20o%20advogado%20Pedro%20Augusto." target="_blank">
+      <div class="card-titulo">
+        <div class="imagem-titulo">
+          <img src="/assets/logo.png" alt="Logo do Escritório" />
+        </div>
+        <div class="texto-titulo">
+          <a href="#topo">
+            <h1>Dr. PEDRO AUGUSTO</h1>
+            <p>Soluções Jurídicas</p>
+          </a>
+        </div>
+      </div>
+
+      <nav class="topo-menu">
+        <a href="#sobre">SOBRE</a>
+        <a href="#atuacao">ÁREAS DE ATUAÇÃO</a>
+        <a href="#contatos">CONTATOS</a>
+        <a href="#form-whatsapp" class="whatsapp-btn">
   Fale no WhatsApp
-</a>
+
+       </a>
+        </a>
       </nav>
     </div>
   </header>
 
+<!--Formulário-->
+<div class="form-fixo" id="form-flutuante">
+  <div class="form-header">
+    <h3>Fale com o Dr. Pedro</h3>
+  </div>
+  <form id="form-contato">
+    <input type="text" id="nome" placeholder="Seu nome" required />
+    <input type="email" id="email" placeholder="Seu e-mail" required />
+    <textarea id="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+    <button type="submit">Enviar para o WhatsApp</button>
+  </form>
+</div>
+
+
+  <main>
+    <section id="sobre">
+    </section>
+
+    <section id="atuacao">
+    </section>
+
+  <section id="contatos">
+  </section>
+
+  </main>
 
 </body>
+
+<script src="script.js"  defer ></script>
+
 </html>
+
+
+
+
+

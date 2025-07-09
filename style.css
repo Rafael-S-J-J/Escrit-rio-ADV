@@ -1,0 +1,191 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte principal */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #505050, #2c2c2c, #444444);
+  color: #fff;
+  min-height: 100vh;
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+/* Container central */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+.card-titulo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.imagem-titulo img {
+  width: 70px;
+  height: auto;
+}
+
+.texto-titulo a {
+  color: white;
+  text-decoration: none;
+}
+
+.texto-titulo h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: #ffd700;
+}
+
+.texto-titulo p {
+  font-size: 16px;
+  color: #eee;
+}
+
+/* Navegação */
+.topo-menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.topo-menu a {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.topo-menu a:hover {
+  color: #ffd700;
+}
+
+/* Botão WhatsApp */
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebc59;
+}
+
+/* Seções */
+main section {
+  padding: 60px 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topo-menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .card-titulo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .texto-titulo h1 {
+    font-size: 20px;
+  }
+}
+
+
+/* Formulario */
+.form-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  background: linear-gradient(135deg, #1e1e1e, #292929);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(158, 157, 157, 0.5);
+  z-index: 9998;
+}
+
+.form-header h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.form-fixo input,
+.form-fixo textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #dfdddd;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+.form-fixo textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-fixo button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-fixo button:hover {
+  background-color: #1ebc59;
+}
