@@ -120,7 +120,8 @@ main section {
 
 .box-banner{
   display:flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  
 
 }
 
@@ -129,6 +130,7 @@ main section {
   z-index: 1;
   color: white;
   font-size: 5.0rem;
+  margin-bottom: 15px;
 }
 
 @keyframes pulo {
