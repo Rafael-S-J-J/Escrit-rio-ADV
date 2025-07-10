@@ -80,8 +80,8 @@ header {
 .whatsapp-btn {
   color: white;
   background-color: #25d366;
-  padding: 09px 15px;
-  border-radius: 15px ;
+  padding: 05px 20px;
+  border-radius: 10px ;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -90,11 +90,80 @@ header {
   background-color: #1ebc59;
 }
 
+/* Seções */
+main section {
+  padding: 60px 20px;
+}
+
+.banner{
+  height: 700px;
+  margin: 0;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("/assets/design-de-interiores-de-uma-arquitetura-antiga.jpg");
+  background-size: cover;
+  background-position: center;
+    filter: blur(2px);
+  z-index: 0;
+}
 
 
+.box-banner{
+  display:flex;
+  flex-direction: column-reverse;
 
+}
 
+  .texto-banner {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 5.0rem;
+}
 
+@keyframes pulo {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.texto-banner h1 {
+  animation: pulo 0.9s ease-out;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.imagem-banner {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-banner img{
+  width: 100px;
+  height: 100px;
+}
 
 footer {
   background-color: #1a1a1a;
@@ -106,10 +175,7 @@ footer {
 
 
 
-/* Seções */
-main section {
-  padding: 60px 20px;
-}
+
 
 /* Responsivo */
 @media (max-width: 768px) {
