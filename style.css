@@ -110,7 +110,7 @@ main section {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url("/assets/design-de-interiores-de-uma-arquitetura-antiga.jpg");
+  background-image: url("assets/design-de-interiores-de-uma-arquitetura-antiga.jpg");
   background-size: cover;
   background-position: center;
     filter: blur(2px);
@@ -166,6 +166,41 @@ main section {
   width: 100px;
   height: 100px;
 }
+
+/* Estilização sobre Área de atuação */
+
+.sessao-card-atuacao {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.titulo-card{
+  margin: 25px;
+  margin-bottom: 50px;
+}
+
+.card-atuacao{
+  margin: 0px 50px;
+  align-items: center;
+
+}
+
+.card-atuacao img{
+  width: 100px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   background-color: #1a1a1a;
