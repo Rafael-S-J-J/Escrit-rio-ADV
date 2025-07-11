@@ -217,55 +217,97 @@ footer {
 }
 
 
-/*Forumulário*/
-.form-fixo {
+/* Botão flutuante WhatsApp */
+.botao-wpp {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 320px;
-  background: linear-gradient(135deg, #1e1e1e, #333);
-  color: #fff;
+  background-color: #25d366;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+.botao-wpp:hover {
+  transform: scale(1.05);
+}
+
+.botao-wpp img {
+  width: 32px;
+  height: 32px;
+}
+
+
+
+/* Formulário flutuante oculto */
+.form-flutuante {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background-color: #202020;
+  color: #d3d1d1;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 8px 20px rgba(209, 203, 203, 0.5);
-  z-index: 9998;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(250, 249, 249, 0.3);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.form-flutuante.oculto {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .form-header h3 {
   font-size: 16px;
-  margin-bottom: 10px;
-  color: #fff;
+  margin: 0;
 }
 
-.form-fixo input,
-.form-fixo textarea {
+#fechar-formulario {
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs */
+.form-flutuante input,
+.form-flutuante textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #e9e7e7;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 6px;
-  color: white;
   font-size: 14px;
 }
 
-.form-fixo textarea {
+.form-flutuante textarea {
   resize: vertical;
-  min-height: 80px;
 }
 
-.form-fixo button {
+.form-flutuante button {
   background-color: #25d366;
   color: white;
+  font-weight: bold;
   border: none;
-  width: 100%;
   padding: 10px;
   border-radius: 6px;
-  font-weight: bold;
+  width: 100%;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.form-fixo button:hover {
+.form-flutuante button:hover {
   background-color: #1ebc59;
 }
