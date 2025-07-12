@@ -20,7 +20,6 @@ header {
   background-color: rgba(17, 17, 17, 0.85);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   padding: 15px ;
-  
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -99,7 +98,6 @@ main section {
   height: 700px;
   margin: 0;
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +111,7 @@ main section {
   background-image: url("assets/design-de-interiores-de-uma-arquitetura-antiga.jpg");
   background-size: cover;
   background-position: center;
-    filter: blur(2px);
+  filter: blur(2px);
   z-index: 0;
 }
 
@@ -153,6 +151,7 @@ main section {
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
   text-align: center;
+  font-weight: bold;
 }
 
 .imagem-banner {
@@ -172,19 +171,40 @@ main section {
 .sessao-card-atuacao {
   display: flex;
   justify-content: center;
+  gap: 40px;
+  padding: 20px;
   
 }
 
 .titulo-card{
-  margin: 25px;
-  margin-bottom: 50px;
+  margin: 40px auto;
+  text-align: center;
 }
 
-.card-atuacao{
-  margin: 0px 50px;
-  align-items: center;
-
+.titulo-card h1{
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  animation: pulo 0.9s ease-out;
+  text-align: center;
 }
+
+.card-atuacao{ 
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(17, 17, 17, 0.85);
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(102, 98, 98, 0.5);
+  transition: transform 0.3s ease;
+}
+
+
+.card-atuacao:hover {
+  transform: translateY(-5px);
+}
+
 
 .card-atuacao img{
   width: 100px;
@@ -209,9 +229,6 @@ footer {
   font-size: 14px;
   color: #aaa;
 }
-
-
-
 
 
 /* Responsivo */
