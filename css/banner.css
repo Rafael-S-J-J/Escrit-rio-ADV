@@ -1,0 +1,70 @@
+.banner{
+  min-height: 1000px;
+  padding: 150px 0px;
+  gap: 50px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("/assets/design-de-interiores-de-uma-arquitetura-antiga.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: 0;
+}
+
+
+.box-banner{
+  display:flex;
+  flex-direction: column;
+}
+
+.texto-banner {
+  color: white;
+  font-size: 5.0rem;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+
+/* Efeito visual no texto do banner */
+@keyframes pulo {  
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Efeito visual no texto do banner */
+.texto-banner h1 {
+  animation: pulo 0.9s ease-out;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.imagem-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-banner img{
+  width: 100px;
+  height: 100px;
+}

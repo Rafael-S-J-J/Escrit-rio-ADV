@@ -8,73 +8,9 @@
 /* Fonte principal */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #111111, #2c2c2c, #444444);
   color: #fff;
-  min-height: 100vh;
 }
 
-
-/* Header */
-header {
-  width: 100%;
-  background-color: rgba(17, 17, 17, 0.85);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-  padding: 15px ;
-  
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-
-.card-titulo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.imagem-titulo img {
-  width: 80px;
-  height: auto;
-}
-
-.texto-titulo a {
-  color: white;
-  text-decoration: none;
-}
-
-.texto-titulo h1 {
-  font-size: 20px;
-  margin-bottom: 4px;
-  color: #e7c362
-}
-
-.texto-titulo p {
-  font-size: 15px;
-  font-weight: 450;
-  color: #eee;
-}
-
-/* Navegação */
-.topo-menu {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 10px;
-}
-
-.topo-menu a {
-  color: white;
-  font-weight: 600;
-  font-size: 15px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.topo-menu a:hover {
-  color: #e7c362;
-}
 
 /* Botão WhatsApp */
 .whatsapp-btn {
@@ -89,118 +25,6 @@ header {
 .whatsapp-btn:hover {
   background-color: #1ebc59;
 }
-
-/* Seções */
-main section {
-  padding: 60px 20px;
-}
-
-.banner{
-  height: 700px;
-  margin: 0;
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.banner::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url("assets/design-de-interiores-de-uma-arquitetura-antiga.jpg");
-  background-size: cover;
-  background-position: center;
-    filter: blur(2px);
-  z-index: 0;
-}
-
-
-.box-banner{
-  display:flex;
-  flex-direction: column;
-  
-
-}
-
-  .texto-banner {
-  position: relative;
-  z-index: 1;
-  color: white;
-  font-size: 5.0rem;
-  margin-bottom: 15px;
-}
-
-@keyframes pulo {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  60% {
-    transform: translateY(-10px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.texto-banner h1 {
-  animation: pulo 0.9s ease-out;
-  font-size: 5rem;
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-  text-align: center;
-}
-
-.imagem-banner {
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagem-banner img{
-  width: 100px;
-  height: 100px;
-}
-
-/* Estilização sobre Área de atuação */
-
-.sessao-card-atuacao {
-  display: flex;
-  justify-content: center;
-  
-}
-
-.titulo-card{
-  margin: 25px;
-  margin-bottom: 50px;
-}
-
-.card-atuacao{
-  margin: 0px 50px;
-  align-items: center;
-
-}
-
-.card-atuacao img{
-  width: 100px;
-  
-}
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
   background-color: #1a1a1a;
@@ -237,19 +61,7 @@ footer {
   }
 }
 
-/*Botao Whatsapp*/
-.botao-wpp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  padding: 12px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  z-index: 9999;
-  transition: transform 0.2s ease;
-}
+
 
 
 /* Botão flutuante WhatsApp */
@@ -271,8 +83,8 @@ footer {
 }
 
 .botao-wpp img {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 26px;
 }
 
 
@@ -300,8 +112,8 @@ footer {
 
 .form-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
