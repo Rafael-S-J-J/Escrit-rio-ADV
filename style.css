@@ -13,17 +13,18 @@ body {
 
 
 /* Botão WhatsApp */
-.whatsapp-btn {
-  color: white;
-  background-color: #25d366;
+.whatsapp-btn a{
+  background-color: #72e606;
+  border: 1px solid #72e606;
   padding: 05px 20px;
   border-radius: 10px ;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.whatsapp-btn:hover {
-  background-color: #1ebc59;
+.whatsapp-btn a:hover {
+  background-color: green;
+  color: white;
+  border: none;
 }
 
 footer {

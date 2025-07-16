@@ -1,28 +1,89 @@
 .banner {
-  min-height: 1000px;
-  padding: 150px 0;
-  gap: 50px;
+  height: 100vh;
+  padding: 0 10%;
+  background: linear-gradient(to bottom, #f8f8f8, #101e30);
+  
 
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 25px;
+  height: 25px;
+}
+
+.banner-content  {
+  color: white; 
+  max-width: 600px;
+  margin-left: 120px;
+  
+}
+
+
+/* Efeito visual no texto do banner */
+.banner-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  animation: pulo 0.9s ease-out;
+}
+
+.banner-content h3 {
+  font-size: 36px;
+  font-weight: 700;
+  animation: pulo 0.9s ease-out;
+}
+.banner-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+}
+
+
+
+.btn-banner a {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family:"Nunito", sans-serif;
+
+  width: 200px;
+  height: 50px;
+  background-color: #72e606;
+  border: 1px solid #72e606;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(7, 5, 5);
+  z-index: 1;
   overflow: hidden;
-
-  background-image: url("../assets/banner-tetse.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.box-banner{
-  display:flex;
-  flex-direction: column;
-  margin: 30px;
+.btn-banner a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  background-color: green;
+  transition: .5s;
 }
 
-.texto-banner {
-  color: white;
-  font-size: 5.0rem;
-  margin-bottom: 15px;
+.btn-banner a:hover::before{
+  width: 100%;
+}
+
+.btn-banner a:hover{
+  transition: .5s;
+  border: 2px solid #ffffff;
+  color: rgb(253, 255, 253);
+
 }
 
 /* Efeito visual no texto do banner */
@@ -40,22 +101,18 @@
   }
 }
 
-/* Efeito visual no texto do banner */
-.texto-banner h1 {
-  animation: pulo 0.9s ease-out;
-  font-size: 5rem;
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-  text-align: center;
-}
 
-.imagem-banner {
+
+.retrato-banner {
+  flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* centraliza horizontalmente dentro da div */
+  align-items: center;     /* centraliza verticalmente */
 }
 
-.imagem-banner img{
-  width: 100px;
-  height: 100px;
+.retrato-banner img {
+   width: 500px !important;
+  height: auto !important;
+  object-fit: contain;
+  
 }
