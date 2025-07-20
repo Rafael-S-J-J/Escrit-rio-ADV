@@ -12,20 +12,6 @@ body {
 }
 
 
-/* Botão WhatsApp */
-.whatsapp-btn a{
-  background-color: #72e606;
-  border: 1px solid #72e606;
-  padding: 05px 20px;
-  border-radius: 10px ;
-  font-weight: bold;
-}
-
-.whatsapp-btn a:hover {
-  background-color: green;
-  color: white;
-  border: none;
-}
 
 footer {
   background-color: #1a1a1a;
