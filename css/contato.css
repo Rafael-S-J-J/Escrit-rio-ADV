@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.section-contato{
+    color: black;
+    background-color:rgb(243, 248, 252);
+    font-family: "Nunito", sans-serif;
+    height: 100vh;
+}
+
+.box-card-contato img {
+    width: 30px;
+    height: 30px;
+}
+
+.box-card-contato{
+    display: flex;
+    margin: 30px;
+    width: 400px;
+    
+}
+
+.box-card-contato p {
+    margin-left: 10px;
+    color: rgba(116, 114, 112, 0.986);
+}
+
+.box-card-contato span {
+    color: black;
+    font-weight: 800;
+}
