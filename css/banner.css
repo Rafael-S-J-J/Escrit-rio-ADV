@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .banner {
   height: 100vh;
   padding: 0 10%;
@@ -19,12 +22,10 @@
   color: white; 
   max-width: 600px;
   margin-left: 120px;
-  
 }
 
-
-/* Efeito visual no texto do banner */
 .banner-content h1 {
+  font-family: "Nunito", sans-serif;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
@@ -33,17 +34,19 @@
 
 .banner-content h3 {
   font-size: 36px;
-  font-weight: 700;
-  animation: pulo 0.9s ease-out;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
+
 .banner-content p {
-  font-size: 16px;
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 1.5px;
   margin: 20px 0 40px;
 }
 
-
-
 .btn-banner a {
+  font-family: "Nunito", sans-serif;
   position: relative;
   display: flex;
   justify-content: center;
@@ -51,11 +54,11 @@
   font-family:"Nunito", sans-serif;
 
   width: 200px;
-  height: 50px;
-  background-color: #72e606;
-  border: 1px solid #72e606;
-  border-radius: 10px;
-  font-size: 18px;
+  height: 40px;
+  background-color: #25D366;
+  border: 1px solid #25D366;
+  border-radius: 8px;
+  font-size: 17px;
   font-weight: 800;
   text-decoration: none;
   color: rgb(7, 5, 5);
@@ -71,7 +74,8 @@
   width: 0;
   height: 100%;
   z-index: -1;
-  background-color: green;
+  background-color: #157A54;
+  transform: scale(1.05);
   transition: .5s;
 }
 
@@ -81,12 +85,17 @@
 
 .btn-banner a:hover{
   transition: .5s;
-  border: 2px solid #ffffff;
+  border: 1px solid  #157a54;
   color: rgb(253, 255, 253);
 
 }
 
 /* Efeito visual no texto do banner */
+.banner-content h1, .banner-content h3, .banner-content p, .btn-banner a {
+  animation: pulo 0.9s ease-out;
+}
+
+
 @keyframes pulo {  
   0% {
     transform: translateY(100px);
@@ -106,8 +115,15 @@
 .retrato-banner {
   flex: 1;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente dentro da div */
-  align-items: center;     /* centraliza verticalmente */
+  justify-content: center; 
+  align-items: center; 
+  
+}
+
+.retrato-banner img{
+  
+  border-radius: 50%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .retrato-banner img {
