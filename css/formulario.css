@@ -1,0 +1,109 @@
+/* Container geral da seção */
+.sessao-formulario-wpp {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #0e1a2b, #101e30);
+  display: flex;
+  justify-content: center;
+}
+
+/* Flex entre formulário e caixa de contato */
+.form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Formulário */
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #0e1a2b;
+  text-align: center;
+}
+
+/* Inputs */
+#form-whatsapp-envio input,
+#form-whatsapp-envio textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#form-whatsapp-envio input:focus,
+#form-whatsapp-envio textarea:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+  outline: none;
+}
+
+/* Botão */
+#form-whatsapp-envio button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1ebc59;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#form-whatsapp-envio button:hover {
+  background-color: #169c49;
+}
+
+/* Caixa de contato direto */
+.caixa-contato-direto {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  width: 100%;
+  color: #0e1a2b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.caixa-contato-direto h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.caixa-contato-direto p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.caixa-contato-direto a {
+  text-decoration: none;
+  color: #1ebc59;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.caixa-contato-direto a:hover {
+  color: #169c49;
+}
