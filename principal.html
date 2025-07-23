@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/banner.css" />
   <link rel="stylesheet" href="css/card.css" />
-   <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="css/contato.css">
   <link rel="stylesheet" href="css/header.css"/>
   <link rel="stylesheet" href="css/banner.css"/>
   <link rel="stylesheet" href="css/card.css"/>
@@ -18,8 +18,11 @@
   <link rel="icon" type="assets/logo.png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <title>Pedro Augusto - Advogado</title>
@@ -31,6 +34,7 @@
       <div class="imagem-titulo">
         <img src="assets/logo2.png" alt="Logo do Escritório" />
       </div>
+
       <div class="texto-titulo">
         <a href="#topo">
           <h1>PEDRO AUGUSTO</h1>
@@ -38,12 +42,20 @@
         </a>
       </div>
     </div>
+
     <nav class="topo-menu">
-      <a href="#sobre">SOBRE</a>
       <a href="#atuacao">ÁREAS DE ATUAÇÃO</a>
       <a href="#contato">CONTATO</a>
-      <div class="whatsapp-btn"> <a href="#form-whatsapp"> FALE COMIGO  </a> </div>
+      <div class="whatsapp-btn"> <a href="#form-whatsapp"> FALE COMIGO  </a> 
+      </div> 
     </nav>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    
   </header>
   <main>
     <section class="banner">
@@ -109,37 +121,73 @@
       </div> 
      </section>
 
-    <section class="sessao-formulario-wpp">
+   <section class="sessao-formulario-wpp" id="contato">
   <div class="form-wrapper">
 
     <!-- Formulário -->
-    <div class="form-container">
-      <h2>Fale com o Dr. Pedro</h2>
+    <div class="form-container" id="contato">
+      <h2>Formulário de Contatos</h2>
+      <p class="subtitulo-contato">Tire suas dúvidas ou agende uma consulta com nosso escritório.</p>
+
       <form id="form-whatsapp-envio">
-        <input type="text" id="nomeContato" placeholder="Seu nome*" required />
-        <input type="email" id="emailContato" placeholder="Seu e-mail*" required />
-        <input type="tel" id="telefoneContato" placeholder="Telefone com DDD*" required />
-        <input type="text" id="assuntoContato" placeholder="Assunto*" required />
-        <textarea id="mensagemContato" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="assunto">Assunto</label>
+        <select id="assunto" name="assunto" required>
+          <option value="" disabled selected>Selecione o assunto</option>
+          <option value="Direito Civil">Direito Civil</option>
+          <option value="Direito Penal">Direito Penal</option>
+          <option value="Direito Trabalhista">Direito Trabalhista</option>
+          <option value="Direito Previdenciário">Direito Previdenciário</option>
+          <option value="Direito do Consumidor">Direito do Consumidor</option>
+          <option value="Direito de Família">Direito de Família</option>
+        </select>
+
+        <label for="mensagemContato">Mensagem</label>
+        <textarea id="mensagemContato" name="mensagemContato" rows="5" placeholder="Descreva brevemente seu caso..." required></textarea>
+
         <button type="submit">
           <span>➤</span> Enviar via WhatsApp
         </button>
       </form>
     </div>
 
-    <!-- Contato direto -->
+    <!-- Caixa de Contato Direto -->
     <div class="caixa-contato-direto">
       <h3>Contatos diretos</h3>
-      <p>
-        📞 <a href="https://wa.me/557199110476" target="_blank">(71) 99110-0476</a>
-      </p>
-      <p>
-        ✉️ <a href="mailto:pedro.augusto.adv@gmail.com" target="_blank">pedro.augusto.adv@gmail.com</a>
-      </p>
+      <div class="linha-contato">
+        <span class="icone">📞</span>
+        <a href="https://wa.me/5571991100476" target="_blank">(71) 99110-0476</a>
+      </div>
+      <div class="linha-contato">
+        <span class="icone">✉️</span>
+        <a href="mailto:pedroaugustoadv@outlook.com">pedroaugustoadv@outlook.com</a>
+      </div>
+
+      <h3>Horário de Atendimento</h3>
+      <ul>
+        <li><strong>Seg a Sex:</strong> 09h às 19h</li>
+        <li><strong>Sábado:</strong> <span class="fechado">Fechado</span></li>
+        <li><strong>Domingo:</strong> <span class="fechado">Fechado</span></li>
+      </ul>
+      <br>
+
+      <h3>Redes sociais</h3>
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com" target="_blank">🔗 Instagram</a>
+        <a href="#" target="_blank">🔗 Facebook</a>
+      </div>
     </div>
+
   </div>
 </section>
-
 
 
     <section id="sobre">
