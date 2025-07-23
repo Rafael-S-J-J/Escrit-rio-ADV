@@ -1,3 +1,10 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .section-contato{
@@ -5,7 +12,24 @@
     background-color:rgb(243, 248, 252);
     font-family: "Nunito", sans-serif;
     height: 100vh;
+    padding-top: 50px;
 }
+
+.section-contato h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 100px;
+}
+
+.content-info-contato{
+    
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
 
 .box-card-contato img {
     width: 30px;
@@ -14,17 +38,51 @@
 
 .box-card-contato{
     display: flex;
-    margin: 30px;
     width: 400px;
-    
+    margin: 20px 0px 30px;
+}
+
+.box-card-contato a {
+    text-decoration: none;
 }
 
 .box-card-contato p {
     margin-left: 10px;
-    color: rgba(116, 114, 112, 0.986);
+    
 }
 
 .box-card-contato span {
     color: black;
     font-weight: 800;
+}
+
+
+.mapa-container {
+  padding: 25px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mapa-container p {
+    margin: 20px 0 20px;
+}
+
+
+
+/* Código do Footer - ROdapé da página */
+.rodape {
+  background: linear-gradient(to right, #111, #222);
+  color: #ccc;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.rodape-conteudo p {
+  margin: 5px 0;
+}
+
+.rodape strong {
+  color: #fff;
 }

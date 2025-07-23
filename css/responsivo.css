@@ -1,0 +1,208 @@
+/* Media Queries para Responsividade */
+
+/* Tablet - 768px a 1024px */
+@media (max-width: 1024px) {
+  .banner {
+    padding: 0 5%;
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-content {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .retrato-banner img {
+    width: 350px !important;
+  }
+
+  .box-card {
+    justify-content: center;
+  }
+
+  .card-atuacao {
+    width: 200px;
+    height: auto;
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .form-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+
+  .caixa-contato-direto {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .content-info-contato {
+    flex-direction: column;
+  }
+
+  .mapa-container {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+/* Celulares grandes - 481px a 767px */
+@media (max-width: 767px) {
+  header {
+    height: auto;
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+
+  .topo-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .topo-menu.active {
+    display: flex;
+  }
+
+  .menu-mobile-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+  }
+
+  .menu-mobile-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.3s;
+  }
+
+  .menu-mobile-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-mobile-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-mobile-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .banner-content h1 {
+    font-size: 36px;
+  }
+
+  .banner-content h3 {
+    font-size: 24px;
+  }
+
+  .retrato-banner img {
+    width: 280px !important;
+  }
+
+  .titulo-card h1 {
+    font-size: 36px;
+  }
+
+  .card-atuacao {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  .content-box-card, .mapa-container {
+    padding: 0 15px;
+  }
+
+  .form-container, .caixa-contato-direto {
+    padding: 20px;
+  }
+
+  .form-flutuante {
+    width: 280px;
+    right: 10px;
+  }
+}
+
+/* Celulares pequenos - até 480px */
+@media (max-width: 480px) {
+  .banner-content h1 {
+    font-size: 28px;
+  }
+
+  .banner-content h3 {
+    font-size: 20px;
+  }
+
+  .banner-content p {
+    font-size: 15px;
+  }
+
+  .btn-banner a {
+    width: 100%;
+  }
+
+  .retrato-banner img {
+    width: 220px !important;
+  }
+
+  .titulo-card h1 {
+    font-size: 28px;
+  }
+
+  .titulo-card p {
+    font-size: 14px;
+  }
+
+  .box-card-contato {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .box-card-contato img {
+    margin-bottom: 10px;
+  }
+
+  .rodape-conteudo {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
+
+/* Ajustes para telas muito pequenas (menos de 360px) */
+@media (max-width: 360px) {
+  .texto-titulo h1 {
+    font-size: 16px;
+  }
+
+  .texto-titulo p {
+    font-size: 12px;
+  }
+
+  .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .banner-content h3 {
+    font-size: 18px;
+  }
+
+  .form-flutuante {
+    width: 260px;
+  }
+}
