@@ -1,42 +1,46 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.section-contato{
+.section-contato {
     color: black;
-    background-color:rgb(243, 248, 252);
+    background-color: rgb(243, 248, 252);
     font-family: "Nunito", sans-serif;
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-.section-contato h1{
+.section-contato h1 {
     text-align: center;
     font-size: 48px;
     margin-bottom: 100px;
 }
 
-.content-info-contato{
-    
+.content-info-contato {
+
     margin: 30px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-
+.content-box-card {
+    width: 400px;
+}
 
 .box-card-contato img {
     width: 30px;
     height: 30px;
 }
 
-.box-card-contato{
+.box-card-contato {
     display: flex;
     width: 400px;
     margin: 20px 0px 30px;
@@ -48,7 +52,7 @@
 
 .box-card-contato p {
     margin-left: 10px;
-    
+
 }
 
 .box-card-contato span {
@@ -57,13 +61,14 @@
 }
 
 
-.mapa-container {
-  padding: 25px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
-
 .mapa-container p {
     margin: 20px 0 20px;
 }
@@ -72,17 +77,22 @@
 
 /* Código do Footer - ROdapé da página */
 .rodape {
-  background: linear-gradient(to right, #111, #222);
-  color: #ccc;
-  padding: 30px 20px;
-  text-align: center;
-  font-size: 0.9rem;
+    background: linear-gradient(to right, #111, #222);
+    color: #ccc;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+
 .rodape-conteudo p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 .rodape strong {
-  color: #fff;
+    color: #fff;
 }
