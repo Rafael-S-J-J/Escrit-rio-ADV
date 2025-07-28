@@ -232,8 +232,8 @@
     }
 
     .content-box-card h2 {
-        text-align: center;
-        margin-left: 50px;
+        text-align: left;
+        padding-top: 5px;
     }
 
     .box-card-contato {

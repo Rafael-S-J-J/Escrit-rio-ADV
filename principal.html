@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="css/banner.css" />
   <link rel="stylesheet" href="css/formulario.css">
   <link rel="stylesheet" href="css/responsivo.css">
+  <link rel="stylesheet" href="css/whatsapflutuante.css">
   <link rel="icon" type="assets/logo.png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +24,9 @@
     rel="stylesheet">
   <title>Pedro Augusto - Advogado</title>
 </head>
+
 <body>
-  <header id="topo">
+  <header>
     <div class="card-titulo">
       <div class="imagem-titulo">
         <img src="assets/logo2.png" alt="Logo do Escritório" />
@@ -47,6 +50,7 @@
       }
     </style>
   </header>
+
   <main>
     <section class="banner">
       <div class="banner-content">
@@ -56,6 +60,7 @@
           Especializado em diversas áreas do Direito,
           está pronto para oferecer soluções jurídicas eficazes e personalizadas.</p>
         <div class="btn-banner"> <a href="#form-whatsaap"> Fale no WhatsApp </a> </div>
+
       </div>
       <div class="retrato-banner">
         <img src="/assets/Retrato-sem fundo.png">
@@ -153,7 +158,7 @@
           </div>
           <div class="linha-contato">
             <span class="icone">✉️</span>
-            <a href="mailto:pedroaugustoadv@outlook.com">pedroaugustoadv@outlook.com</a>
+            <a href="https://mailto:pedroaugustoadv@outlook.com">pedroaugustoadv@outlook.com</a>
           </div>
           <h3>Horário de Atendimento</h3>
           <ul>
@@ -169,12 +174,12 @@
             <a href="#" target="_blank">🔗 Facebook</a>
           </div>
         </div>
-
       </div>
     </section>
 
     <!-- Sessão de Contato de Localização -->
-    <section class="section-contato" id="contatos">
+    <section class="section-contato" id="form-whatsapp">
+
       <h1> Contato e Localização </h1>
 
       <div class="content-info-contato">
@@ -187,11 +192,12 @@
           </div>
           <div class="box-card-contato">
             <img src="assets/Telefone - azul.png" alt="Endereço">
-            <p> <span>Telefone/WhatsApp</span> <br> <a href="##">(71) 90000-0000 </a></p>
+            <p> <span>Telefone/WhatsApp</span> <br> <a href="##">(71) 99110-0476 </a></p>
           </div>
           <div class="box-card-contato">
             <img src="assets/o-email - azul.png" alt="Endereço">
-            <p> <span>E-mail</span> <br> <a href="mailto:contato@exemplo.com"> contato@exemplo.com </a></p>
+            <p> <span>E-mail</span> <br> <a href="https://mailto:pedroaugustoadv@outlook.com">
+                pedroaugustoadv@outlook.com </a></p>
           </div>
           <div class="box-card-contato">
             <img src="assets/instagram.png" alt="Endereço">
@@ -216,6 +222,41 @@
     <!-- FInal de Sessão do Contato de Localização -->
 
 
+
+    <div class="whatsapp-flutuante">
+      <div class="botao-wpp" onclick="toggleMenu()">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+      </div>
+
+      <div class="menu-wpp" id="menuWpp">
+        <h4>Canais de atendimento</h4>
+
+        <a href="https://wa.me/5571988242714" target="_blank">
+          <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
+          (71) 99110-0476
+        </a>
+
+        <a href="tel:5571988242714">
+          <img src="https://img.icons8.com/color/48/000000/phone.png" />
+          (71) 99110-0476
+        </a>
+
+        <a href="https://mailto:pedroaugustoadv@outlook.com">
+          <img src="https://img.icons8.com/color/48/000000/new-post.png" />
+          Envie sua mensagem
+        </a>
+      </div>
+    </div>
+
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menuWpp");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+
+
     <!-- RODAPÉ -->
     <footer class="rodape">
       <div class="rodape-conteudo">
@@ -223,29 +264,6 @@
         <p>Desenvolvido por <strong>Heitor Cajuhi</strong> e <strong>Rafael Silva</strong></p>
       </div>
     </footer>
-
-
-
-
-
-    <!-- BOTÃO FLUTUANTE WHATSAPP -->
-    <div class="botao-wpp" id="abrir-formulario">
-      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
-    </div>
-
-    <!-- FORMULÁRIO FLUTUANTE -->
-    <div class="form-flutuante oculto" id="form-flutuante">
-      <div class="form-header">
-        <h3>Fale com o Dr Pedro</h3>
-        <span id="fechar-formulario">✖</span>
-      </div>
-      <form id="form-contato">
-        <input type="text" id="nome" placeholder="Seu nome" required />
-        <input type="email" id="email" placeholder="Seu e-mail" required />
-        <textarea id="mensagem" placeholder="Digite sua mensagem..." required></textarea>
-        <button type="submit">Enviar para o WhatsApp</button>
-      </form>
-    </div>
 
     <script src="script.js" defer></script>
 </body>

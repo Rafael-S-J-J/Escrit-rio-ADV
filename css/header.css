@@ -1,21 +1,29 @@
 :root {
   /* 🎨 Paleta Principal */
-  --color-GR: #0D0D0D;            /* Fundo geral (quase preto) */
-  --color-surface: #1A1A1A;       /* Fundo de seções ou cards */
-  --color-border: #333333;        /* Bordas e divisórias */
-  
+  --color-GR: #0D0D0D;
+  /* Fundo geral (quase preto) */
+  --color-surface: #1A1A1A;
+  /* Fundo de seções ou cards */
+  --color-border: #333333;
+  /* Bordas e divisórias */
+
   /* ⚪ Texto */
-  --color-text: #F5F5F5;          /* Texto principal (quase branco) */
-  --color-subtext: #B0B0B0;       /* Subtítulos, descrições e rótulos */
+  --color-text: #F5F5F5;
+  /* Texto principal (quase branco) */
+  --color-subtext: #B0B0B0;
+  /* Subtítulos, descrições e rótulos */
 
   /* 🟢 WhatsApp */
   --color-whatsapp: #25D366;
   --color-whatsapp-hover: #1EBE5D;
 
   /* 🖤 Botões e Destaques */
-  --color-button: #1F1F1F;        /* Fundo de botões escuros */
-  --color-button-hover: #2A2A2A;  /* Hover escurecido */
-  --color-highlight: #444444;     /* Blocos de destaque leve */
+  --color-button: #1F1F1F;
+  /* Fundo de botões escuros */
+  --color-button-hover: #2A2A2A;
+  /* Hover escurecido */
+  --color-highlight: #444444;
+  /* Blocos de destaque leve */
 
   /* 🎨 Feedbacks (opcional) */
   --color-success: #198754;
@@ -37,18 +45,19 @@ header {
   font-weight: 800;
   width: 100%;
   height: 100px;
-  padding: 5px 0px ;
+  padding: 5px 0px;
   background: linear-gradient(to bottom, var(--color-GR));
   color: var(--color-text);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
 }
 
 .card-titulo {
   display: flex;
   align-items: center;
-  font-family:'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .imagem-titulo img {
@@ -87,28 +96,35 @@ header {
   font-size: 15px;
   text-decoration: none;
   transition: color 0.3s;
-  
+
 }
 
 .topo-menu {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.topo-menu a:hover{
+.topo-menu a:hover {
   transition: 0.3s ease;
   transform: translateY(-2px);
 }
 
-
 .whatsapp-btn a {
-    background-color: var(--color-whatsapp);
-    color: #0D0D0D;
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px;
-    transition: 0.5s ease;
-    overflow: hidden;
-    
+  background-color: var(--color-whatsapp);
+  color: #0D0D0D;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:"Nunito", sans-serif;
+
+  width: 150px;
+  height: 20px;
+  padding: 13px;
+
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.5s ease;
+  overflow: hidden;
 }
 
 .whatsapp-btn a:hover {
@@ -117,6 +133,6 @@ header {
   transform: translateY(-2px);
 }
 
-.whatsapp-btn a:hover{
+.whatsapp-btn a:hover {
   color: aliceblue;
 }
