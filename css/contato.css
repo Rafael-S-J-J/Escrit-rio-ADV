@@ -1,8 +1,8 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Fonte padrão */
@@ -107,7 +107,6 @@
   border: none;
   border-radius: 8px;
 }
-
 .mapa-container p {
   margin: 20px 0 10px;
   color: #444;
@@ -124,12 +123,13 @@
   margin-top: 40px;
 }
 
+
 .rodape-conteudo p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 .rodape strong {
-  color: #fff;
+    color: #fff;
 }
 
 /* Responsividade */
