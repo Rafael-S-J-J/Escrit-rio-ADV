@@ -15,3 +15,5 @@ document.getElementById("form-whatsapp-envio").addEventListener("submit", functi
 
     window.open(url, "_blank");
 });
+
+

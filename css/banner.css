@@ -45,26 +45,6 @@
   margin: 20px 0 40px;
 }
 
-.btn-banner a {
-  font-family: "Nunito", sans-serif;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family:"Nunito", sans-serif;
-
-  width: 200px;
-  height: 40px;
-  background-color: #25D366;
-  border: 1px solid #25D366;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 800;
-  text-decoration: none;
-  color: rgb(7, 5, 5);
-  z-index: 1;
-  overflow: hidden;
-}
 
 .btn-banner a::before{
   content: "";
