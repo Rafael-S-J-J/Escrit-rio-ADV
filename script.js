@@ -14,6 +14,9 @@ document.getElementById("form-whatsapp-envio").addEventListener("submit", functi
     const url = `https://wa.me/${telefoneDestino}?text=${encodeURIComponent(texto)}`;
 
     window.open(url, "_blank");
+
 });
+
+
 
 
