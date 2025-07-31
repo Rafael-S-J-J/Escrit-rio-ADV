@@ -42,7 +42,7 @@
 .banner {
   height: 100vh;
   padding: 0 10%;
-  background: linear-gradient(to bottom, var(--color-GR)); 
+  background: linear-gradient(to bottom, #000000, #202020, #030202); 
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
@@ -158,7 +158,7 @@
 .retrato-banner img{
   
   border-radius: 50%;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.50);
+  box-shadow: 1px 1px 10px rgba(48, 48, 48, 0.50);
 }
 
 .retrato-banner img {

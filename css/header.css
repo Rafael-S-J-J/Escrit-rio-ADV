@@ -46,7 +46,7 @@ header {
   width: 100%;
   height: 100px;
   padding: 5px 0px;
-  background: linear-gradient(to bottom, var(--color-GR));
+  background-color: #000000;
   color: var(--color-text);
   display: flex;
   justify-content: space-around;
