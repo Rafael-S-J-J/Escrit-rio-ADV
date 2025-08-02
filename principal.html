@@ -27,29 +27,40 @@
 
 <body>
   <header>
-    <div class="card-titulo">
-      <div class="imagem-titulo">
-        <img src="assets/logo2.png" alt="Logo do Escritório" />
-      </div>
-
-      <div class="texto-titulo">
-        <a href="#topo">
-          <h1>PEDRO AUGUSTO</h1>
-          <p>Soluções Jurídicas</p>
-        </a>
-      </div>
+  <div class="card-titulo">
+    <div class="imagem-titulo">
+      <img src="assets/logo.png" alt="Logo do Escritório" />
     </div>
-    <nav class="topo-menu">
-      <a href="#atuacao">ÁREAS DE ATUAÇÃO</a>
-      <a href="#contato">CONTATO</a>
-      <div class="whatsapp-btn"> <a href="#form-whatsapp"> FALE COMIGO </a> </div>
-    </nav>
-    <style>
+
+    <div class="texto-titulo">
+      <a href="#topo">
+        <h1>PEDRO AUGUSTO</h1>
+        <p>Soluções Jurídicas</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Botão do menu hamburguer -->
+  <div class="menu-hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- Menu de navegação -->
+  <nav class="topo-menu" id="topoMenu">
+    <a href="#atuacao">ÁREAS DE ATUAÇÃO</a>
+    <a href="#contato">CONTATO</a>
+    <div class="whatsapp-btn">
+      <a href="#form-whatsapp">FALE COMIGO</a>
+    </div>
+  </nav>
+
+   <style>
       html {
         scroll-behavior: smooth;
       }
     </style>
   </header>
+
 
   <main>
     <section class="banner">
@@ -231,7 +242,7 @@
 
 
     <div class="whatsapp-flutuante">
-  <div class="botao-wpp" onclick="toggleMenu()">
+  <div class="botao-wpp" onclick="toggleWhatsApp()">
     <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
   </div>
 
@@ -257,7 +268,7 @@
 
 
 <script>
-  function toggleMenu() {
+  function toggleWhatsApp() {
     const menu = document.getElementById("menuWpp");
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
   }
@@ -277,6 +288,13 @@
 
 
     <script src="script.js" defer></script>
+
+    <script>
+  function toggleMenu() {
+    document.getElementById("topoMenu").classList.toggle("active");
+  }
+   </script>
+
 </body>
 
 </html>

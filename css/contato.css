@@ -48,7 +48,7 @@
 
 /* Seção principal de contato */
 .section-contato {
-  background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(23, 23, 23, 1) 100%, rgba(237, 221, 83, 1) 100%);
+   background: linear-gradient(to bottom, #000000, #202020, #030202); 
   font-family: "Nunito", sans-serif;
   padding: 60px 20px 80px;
   color: var(--color-text);

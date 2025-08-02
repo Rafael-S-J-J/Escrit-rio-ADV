@@ -17,6 +17,15 @@ document.getElementById("form-whatsapp-envio").addEventListener("submit", functi
 
 });
 
+function toggleMenu() {
+  const menu = document.getElementById('topoMenu');
+  menu.classList.toggle('active');
+}
+
+
+
+
+
 
 
 

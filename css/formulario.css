@@ -1,7 +1,7 @@
 /* Container geral da seção */
 .sessao-formulario-wpp {
   padding: 120px 20px;
-  background: linear-gradient(to bottom, #0e1a2b, #101e30);
+  background: linear-gradient(to bottom, #000000, #202020, #030202); 
   display: flex;
   justify-content: center;
 
