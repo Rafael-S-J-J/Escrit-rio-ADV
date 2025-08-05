@@ -42,10 +42,11 @@
 .banner {
   height: 100vh;
   padding: 0 10%;
-  background: linear-gradient(to bottom, #000000, #202020, #030202); 
+  background: linear-gradient(to bottom, #000000, #202020, #030202);
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .banner img {
@@ -53,10 +54,9 @@
   height: 25px;
 }
 
-.banner-content  {
+.banner-content {
   color: var(--color-text);
   max-width: 600px;
-  margin-left: 120px;
 }
 
 .banner-content h1 {
@@ -86,7 +86,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:"Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 
   width: 200px;
   height: 40px;
@@ -101,7 +101,7 @@
   overflow: hidden;
 }
 
-.btn-banner a::before{
+.btn-banner a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -114,56 +114,52 @@
   transition: .5s;
 }
 
-.btn-banner a:hover::before{
+.btn-banner a:hover::before {
   width: 100%;
 }
 
-.btn-banner a:hover{
+.btn-banner a:hover {
   transition: .5s;
-  border: 1px solid  #157a54;
+  border: 1px solid #157a54;
   color: rgb(253, 255, 253);
 
 }
 
 /* Efeito visual no texto do banner */
-.banner-content h1, .banner-content h3, .banner-content p, .btn-banner a {
+.banner-content h1,
+.banner-content h3,
+.banner-content p,
+.btn-banner a {
   animation: pulo 0.9s ease-out;
 }
 
 
-@keyframes pulo {  
+@keyframes pulo {
   0% {
     transform: translateY(100px);
     opacity: 0;
   }
+
   60% {
     transform: translateY(-10px);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0);
   }
 }
 
 
+.retrato-banner img {
 
-.retrato-banner {
-  flex: 1;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  
-}
-
-.retrato-banner img{
-  
   border-radius: 50%;
   box-shadow: 1px 1px 10px rgba(48, 48, 48, 0.50);
 }
 
 .retrato-banner img {
-   width: 500px !important;
+  width: 500px !important;
   height: auto !important;
   object-fit: contain;
-  
+
 }

@@ -161,15 +161,27 @@ header {
     background-color: #fd1919;
     color: white;
     margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     transform: translate(100%);
   }
 
   .topo-menu a {
     margin-left: 0;
     opacity: 0;
+    color:  white;
   }
   .card-titulo{
     display: none;
     
   }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.topo-menu.active {
+  transform: translate(0);
 }
