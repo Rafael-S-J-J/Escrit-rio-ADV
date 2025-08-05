@@ -11,8 +11,6 @@ body {
   color: #fff;
 }
 
-
-
 footer {
   background-color: #1a1a1a;
   text-align: center;
@@ -20,10 +18,6 @@ footer {
   font-size: 14px;
   color: #aaa;
 }
-
-
-
-
 
 /* Responsivo */
 @media (max-width: 768px) {
@@ -47,9 +41,6 @@ footer {
     font-size: 20px;
   }
 }
-
-
-
 
 /* Botão flutuante WhatsApp */
 .botao-wpp {

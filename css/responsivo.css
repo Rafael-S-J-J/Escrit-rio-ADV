@@ -118,18 +118,6 @@
         flex-wrap: wrap;
     }
 
-    .topo-menu {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 15px;
-    }
-
-    .topo-menu.active {
-        display: flex;
-    }
-
     .menu-mobile-btn {
         display: flex;
         flex-direction: column;

@@ -36,7 +36,6 @@
 }
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Header */
@@ -51,8 +50,6 @@ header {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
-
 }
 
 .card-titulo {
@@ -97,7 +94,6 @@ header {
   font-size: 15px;
   text-decoration: none;
   transition: color 0.3s;
-
 }
 
 .topo-menu {
@@ -116,7 +112,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:"Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 
   width: 150px;
   height: 20px;
@@ -130,53 +126,50 @@ header {
 
 .whatsapp-btn a:hover {
   background-color: var(--color-whatsapp-hover);
-  color: azure;
+  color: rgb(241, 241, 241);
   transform: translateY(-2px);
 }
 
-.whatsapp-btn a:hover {
+.whatsapp-btn:hover {
   color: aliceblue;
 }
 
-
 /* Botão do hamburguer - visível apenas em telas menores */
-.menu-hamburger {
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  margin: 8px;
+  background-color: white;
+}
+
+.mobile-menu {
   display: none;
-  font-size: 28px;
   cursor: pointer;
-  color: var(--color-text);
 }
 
-/* Ajuste do menu para telas grandes */
-@media screen and (max-width: 768px) {
-  .menu-hamburger {
-    display: block; /* mostra o botão em telas pequenas */
+@media ( max-width: 768px) {
+  body{
+    overflow: hidden;
   }
 
-  .topo-menu {
-  position: absolute;
-  top: 100px; /* abaixo do header fixo */
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.95);
-  width: 100%;
-  max-height: 0;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  transition: max-height 0.4s ease;
-  z-index: 999;
-}
-
-  .topo-menu.active {
-   max-height: 300px;
-   padding: 20px 0;
+  .topo-menu{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vh;
+    height: 92vh;
+    background-color: #fd1919;
+    color: white;
+    margin: 0;
+    transform: translate(100%);
   }
 
-  
-  .topo-menu a,
-  .topo-menu .whatsapp-btn a{
-    font-size: 18px;
-    text-align: center;
+  .topo-menu a {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .card-titulo{
+    display: none;
+    
   }
 }
