@@ -16,11 +16,13 @@
   align-items: flex-start;
   max-width: 1000px;
   width: 100%;
+  color: white;
 }
 
 /* Formulário */
 .form-container {
-  background-color: #fff;
+  background-color: #0a0a0a;
+  color: white;
   padding: 30px;
   border-radius: 12px;
   width: 100%;
@@ -57,7 +59,7 @@
 #form-whatsapp-envio button {
   width: 100%;
   padding: 12px;
-  background-color: #e7c362;
+  background: linear-gradient(90deg, #E0E0E0, #C0C0C0, #A0A0A0, #C0C0C0, #E0E0E0);
   border: none;
   color: white;
   font-weight: bold;

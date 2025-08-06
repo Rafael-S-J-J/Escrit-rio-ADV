@@ -17,20 +17,6 @@ document.getElementById("form-whatsapp-envio").addEventListener("submit", functi
 
 });
 
-class MobileNevbar {
-  constructor(mobileMenu, topoMenu, topoLinks) {
-    this.mobileMenu = document.querySelector(mobileMenu);
-    this.topoMenu = document.querySelector(topoMenu);
-    this.topoLinks = document.querySelector(topoLinks);
-    this.activeClass = "active";
-  }
-
-  addClickEvent() {
-    this.mobileMenu.addEventListener("click", () => console.log ("hey"));
-  }
-
-}
-
 
 
 

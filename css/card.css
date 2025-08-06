@@ -17,7 +17,7 @@
 
 .titulo-card h1 {
   font-size: 50px;
-  color: var(--cor-secundaria);
+  color:#ececec;
   margin-bottom: 20px;
 }
 
@@ -54,13 +54,13 @@
   align-items: center;
 
   border-radius: 10px;
-  border: 1px solid var(--cor-secundaria);
+  border: 1px solid rgba(192, 192, 192, 0.7);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card-atuacao:hover {
   transform: translateY(-25px);
-  box-shadow: 0 0 30px rgba(231, 195, 98, 0.4);
+  box-shadow: 0 0 30px rgba(192, 192, 192, 0.5);
 }
 
 .card-atuacao img {
@@ -86,7 +86,7 @@
 }
 
 .card-atuacao a {
-  background-color: var(--cor-secundaria);
+  background: linear-gradient(90deg, #E0E0E0, #C0C0C0, #A0A0A0, #C0C0C0, #E0E0E0);
   color: var(--cor-card);
   text-decoration: none;
   padding: 5px 30px;
