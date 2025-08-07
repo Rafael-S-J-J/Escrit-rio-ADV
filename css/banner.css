@@ -42,7 +42,8 @@
 .banner {
   height: 100vh;
   padding: 0 10%;
-  background: linear-gradient(to bottom, #000000, #202020, #030202);
+  /*background: linear-gradient(to bottom, #000000, #202020, #030202);*/
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a, #0f0f0f);
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
